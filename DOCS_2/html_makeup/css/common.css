@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS common */
+.red {color:#801416}
+
+body {background:url(../images/common/body.gif) repeat;font-size:14px;color:#000;font-family:"Garamond", "Times New Roman", Times, serif}
+#wrapper {width:1002px;margin:20px auto 0 auto;box-shadow:0px 0px 5px 2px #ccc;background:#fff;}
+#header {height:113px;border-bottom:1px solid #b2b2b2;position:relative}
+#header .logo {float:left;padding:10px 0 0 17px}
+#header .navi {float:right;padding:27px 19px 0 0}
+#header .navi .sub_navi {float:right;margin-bottom:29px}
+#header .navi .sub_navi li {float:left;margin-left:16px}
+#header .navi .sub_navi li a {font-size:12px}
+#header .navi .sub_navi li a:hover {color:#811417}
+#header .navi .sub_navi li img {vertical-align:inherit;margin-right:3px}
+#header .navi .main_navi {clear:both;float:right;*width:620px}
+#header .navi .main_navi li {float:left;padding-left:60px}
+#header .navi .main_navi li a {color:#8a333b;font-size:18px;font-weight:bold}
+#header .navi .main_navi li a:hover {color:#6d6d6f}
+#header .navi #SpMain_navi, #header .navi #Sp_navi {display:none}
+#Sp_main_navi{display:none}
+
+#content {padding:20px}
+#content .container {width:685px;font-family:Arial, Helvetica, sans-serif;float:left}
+#content .right_bar {float:right;width:255px}
+#content .right_bar .mtit {border-top:2px solid #801416;font-weight:bold;font-size:18px;color:#333;text-transform:uppercase;font-family:garamond;padding-top:10px;margin-bottom:16px}
+#content .right_bar .fllow_us {margin-bottom:20px}
+#content .right_bar .fllow_us li {float:left;padding-right:10px}
+#content .right_bar .search_bar {margin-bottom:20px}
+#content .right_bar .search_bar input {float:left;height:29px;border:1px solid #d9d9d9}
+#content .right_bar .search_bar .btn_search {background:url(../images/common/btn_search.jpg) 50% 50% no-repeat #f0f0f0;width:35px;cursor:pointer;float:right;text-indent:-9999px}
+#content .right_bar .search_bar .txt_search {width:209px;height:23px;padding:2px}
+#content .right_bar .list01 {}
+#content .right_bar .list01 li {border-bottom:1px solid #f0f0f0;padding:15px 0}
+#content .right_bar .list01 li a {color:#494949;background:url(../images/common/icon_01.jpg) 0 6px no-repeat;padding-left:18px;font-size:14px;font-family:Arial, Helvetica, sans-serif;display:block}
+#content .right_bar .list01 li a:hover {background:url(../images/common/icon_01_hover.jpg) no-repeat 0 6px;color:#801416}
+#content .right_bar .list01 .first {padding-top:0px}
+#content .right_bar .list01 .last {padding-bottom:30px;border-bottom:none}
+#content .right_bar .archives li {padding:10px 0}
+#content .right_bar .list02 li {padding-bottom:13px;text-align:center}
+#content .right_bar .fin_face {padding-top:15px;text-align:center}
+
+#footer {width:1002px;margin:10px auto 20px}
+#footer .contact_footer {float:left}
+#footer .contact_footer .contact p{float:left}
+#footer .contact_footer .contact .mail_link a {font-size:16px;color:#8a333b;font-weight:bold;text-decoration:underline}
+#footer .contact_footer .contact .number_phone {margin:4px 0 0 15px;padding-left:12px;border-left:1px solid #909090;font-weight:bold;font-size:16px;line-height:14px;}
+#footer .contact_footer .copyright {clear:both;font-size:15px;color:#8f8f8f;padding-top:20px;*padding-top:10px}
+#footer .social {float:right}
+#footer .social .fllow_us {float:left;padding-top:5px;font-size:16px;color:#8f8f8f;font-weight:bold}
+#footer .social .list {float:left}
+#footer .social .list li {float:left;padding-left:10px;}
+
+
+
+
+@media only screen and (max-width: 1024px){
+	#wrapper {width:98%;margin:10px auto 0}
+	#header .logo {width:130px;padding-left:10px}
+	#header .navi {padding-right:10px}
+	#header .navi .main_navi li {padding-left:10px}
+	#header .navi .main_navi li a {font-size:14px}
+	
+	#content {padding:10px}
+	#content .container {width:71%}
+	#content .right_bar {width:27%}
+	#content .right_bar .fllow_us li {padding-bottom:3px}
+	#content .right_bar .search_bar .txt_search {width:75%}
+	#content .right_bar .search_bar .btn_search {float:right;background-size:28px 23px;width:19%}
+	
+	#footer {width:98%;text-align:center}
+}
+
+
+
+@media only screen and (max-width: 480px){
+	#wrapper {width:98%;margin:10px auto 0}
+	#header {height:110px}
+	#header .logo {width:100%;padding-left:10px;}
+	#header .navi {padding:10px 10px 0 0; float:none;}
+	#header .main_navi {display:none}
+	#header .navi .sub_navi{ margin-top:-90px;}
+	#header .navi .sub_navi li {margin-left:15px}
+	
+	#header .navi #SpMain_navi{display:block}
+	#SpMain_navi {position: absolute;bottom: 10px;right: 10px;display: block;background:#87171A;padding:5px 9px;cursor:pointer;border-radius:4px;margin-bottom:5px}
+		#SpMain_navi .icon_bar {border-radius:1px;display:block;height:2px;width:22px;background-color:#FFF;text-indent:-9999px;margin:4px 0px}
+	#Sp_navi {position: absolute;top: 81px;left: 0;display: none;width: 100%;z-index: 10}
+		#Sp_navi li {background: #fcfbf4}
+			#Sp_navi li a {display: block;padding: 10px 15px}
+	/*-------------------------------*/
+	.header2 {height:auto !important}
+	.header2 #Sp_main_navi {display:block;clear:both;padding-top:8px}
+	.header2 #Sp_main_navi li {background: #fcfbf4}
+	.header2 #Sp_main_navi li a {display: block;padding: 10px 15px; font-size:18px; font-weight:700; color:#951e1f}
+	.header2 #Sp_main_navi li a:hover {color:#555}
+	/*----------------------------------*/
+	#content {padding:5px}
+	#content .container {width:100%}
+	#content .right_bar {width:100%}
+	#content .right_bar .mtit {font-size:16px}
+	#content .right_bar .fin_face {display:none}
+	
+	#footer {width:98%;text-align:center}
+	#footer .social {float:left}
+	#footer .contact_footer {float:left;width:100%;padding-top:10px}
+	#footer .contact_footer .contact .mail_link a {font-size:14px;color:#8a333b;font-weight:bold;text-decoration:underline}
+	#footer .contact_footer .contact {text-align:center}
+	#footer .contact_footer .contact .number_phone {margin:4px 0 0 10px;padding-left:8px;font-size:16px;line-height:12px;}
+	#footer .contact_footer .copyright {padding-top:10px}
+}
+
