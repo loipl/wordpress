@@ -10,9 +10,9 @@
 
 /*blog*/
 .tit {background:url(images/bg_tit_cmn.jpg) no-repeat;color:#fff;font-size:30px;font-weight:bold;font-style:italic;font-family:Garamond}
-#content .container .mtit {font-size:25px;font-weight:bold;background:url(images/common/bg_line_mtit.jpg) 0 100% repeat-x;padding-bottom:9px;margin-bottom:13px;font-family:Garamond}
-#content .mtit a {color:#333}
-#content .mtit a:hover {color:#801416}
+.entry-title {font-size:25px;font-weight:bold;background:url(images/common/bg_line_mtit.jpg) 0 100% repeat-x;padding-bottom:9px;margin-bottom:13px;font-family:Garamond}
+.entry-title a {color:#333}
+.entry-title a:hover {color:#801416}
 #content .container .cont .collapsed_comments {font-size:11px;font-family:Arial, Helvetica, sans-serif;color:#888;margin-bottom:10px}
 #content .container .cont {padding-bottom:47px}
 #content .container .cont .social_item {padding-bottom:32px}
@@ -35,7 +35,7 @@
 .sub_layout .photo_right {text-align:center;width:400px;float:right}
 
 /*blog_detail*/
-.blog_detail .container .mtit {font-size:34px !important}
+.blog_detail .container .entry-title {font-size:34px !important}
 .blog_detail .container p {padding-bottom:35px}
 .blog_detail .container .social_item {background:url(images/common/bg_line_mtit.jpg) repeat-x;padding-top:10px}
 .blog_detail .container .tit_cment {font-size:20px;font-weight:bold;color:#494949;text-transform:uppercase;border-bottom:1px solid #e7e7e8;font-family:garamond;margin-bottom:25px}
@@ -78,16 +78,16 @@
 .contact .cmxform p .span_item01 {margin:11px 0 5px 0;display:inline-block;width:26%}
 .contact .cmxform p input {vertical-align:top}
 .contact .cmxform p .textarea_01 {height:140px;width:96%;background:#F6F7F8;border:1px solid #CCC;padding:5px}
-.contact .right_contact .mtit {border-top:2px solid #801416;color:#801416;font-family:garamond;font-size:18px;font-weight: bold;margin-bottom:16px;padding-top:10px;text-transform:uppercase}
+.contact .right_contact .entry-title {border-top:2px solid #801416;color:#801416;font-family:garamond;font-size:18px;font-weight: bold;margin-bottom:16px;padding-top:10px;text-transform:uppercase}
 .contact .right_contact .address {background:url(images/common/icon_address.png) no-repeat;padding:0 0 10px 30px}
 .contact .right_contact .phone_contact {background:url(images/common/icon_phone.png) no-repeat;padding:0 0 10px 30px}
 .contact .right_contact p {display:block;margin:10px;font-size:20px}
 
 @media only screen and (max-width: 1024px){
 	/*blog*/
-	#content .container .mtit {font-size:25px;font-weight:bold;background:url(images/common/bg_line_mtit.jpg) 0 100% repeat-x;padding-bottom:9px;margin-bottom:13px;font-family:Garamond}
-	#content .mtit a {color:#333}
-	#content .mtit a:hover {color:#801416}
+	#content .container .entry-title {font-size:25px;font-weight:bold;background:url(images/common/bg_line_mtit.jpg) 0 100% repeat-x;padding-bottom:9px;margin-bottom:13px;font-family:Garamond}
+	#content .entry-title a {color:#333}
+	#content .entry-title a:hover {color:#801416}
 	#content .container .cont {padding-bottom:25px}
 	#content .container .cont .social_item {padding-bottom:16px}
 	#content .container .cont .social_item li {width:20%}
@@ -103,12 +103,12 @@
 
 	/*sub_layout*/
 	.sub_layout .container {width:55.2% !important}
-	.sub_layout .container .mtit {color:#333 !important}
+	.sub_layout .container .entry-title {color:#333 !important}
 	.sub_layout .container .cont p {padding-bottom:27px}
 	.sub_layout .photo_right {text-align:center;width:41.6%;float:right}
 	
 	/*blog_detail*/
-	.blog_detail .container .mtit {font-size:26px !important}
+	.blog_detail .container .entry-title {font-size:26px !important}
 	.blog_detail .container .tit_cment {font-size:14px}
 	.blog_detail .container .tit_cment span {background:#e7e7e8;padding:6px 10px;display:inline-block}
 	.blog_detail .container .comment .list_coment .photo_use {width:40px;padding:5px}
@@ -133,13 +133,13 @@
 }
 @media only screen and (max-width: 480px){
 	/*blog*/
-	#content .container .mtit {font-size:16px}
+	#content .container .entry-title {font-size:16px}
 	#content .container .cont .read_more {padding:5px 6px;}
 	#content .container .PageNav a {padding:3px 5px; font-size:12px;margin-bottom:3px}
 	
 	/*sub_layout*/
 	.sub_layout .container {width:100% !important}
-	.sub_layout .container .mtit {color:#333 !important}
+	.sub_layout .container .entry-title {color:#333 !important}
 	.sub_layout .container .cont p {padding-bottom:27px}
 	.sub_layout .photo_right {text-align:center;width:80%;margin:0 auto;float:none}
 	
@@ -316,7 +316,7 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
 #content {padding:20px}
 #content .container {width:685px;font-family:Arial, Helvetica, sans-serif;float:left}
 #content .right_bar {float:right;width:255px}
-#content .right_bar .mtit {border-top:2px solid #801416;font-weight:bold;font-size:18px;color:#333;text-transform:uppercase;font-family:garamond;padding-top:10px;margin-bottom:16px}
+#content .right_bar .entry-title {border-top:2px solid #801416;font-weight:bold;font-size:18px;color:#333;text-transform:uppercase;font-family:garamond;padding-top:10px;margin-bottom:16px}
 #content .right_bar .fllow_us {margin-bottom:20px}
 #content .right_bar .fllow_us li {float:left;padding-right:10px}
 #content .right_bar .search_bar {margin-bottom:20px}
@@ -391,7 +391,7 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
 	#content {padding:5px}
 	#content .container {width:100%}
 	#content .right_bar {width:100%}
-	#content .right_bar .mtit {font-size:16px}
+	#content .right_bar .entry-title {font-size:16px}
 	#content .right_bar .fin_face {display:none}
 	
 	#footer {width:98%;text-align:center}
