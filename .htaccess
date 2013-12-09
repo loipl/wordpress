@@ -1,4 +1,17 @@
 
 # BEGIN WordPress
+<<<<<<< HEAD
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+php_value upload_max_filesize 200M
+php_value post_max_size 200M
+=======
 
+>>>>>>> 4808654c0844ec76c40685cbb2fd0a907ea8c0e2
 # END WordPress
