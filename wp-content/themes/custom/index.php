@@ -59,23 +59,6 @@ get_header(); ?>
 			</article><!-- #post-0 -->
 
 		<?php endif; // end have_posts() check ?>
-                        
-                 <br/><br/><br/>
-            	<h3 class="mtit"><a href="#">FEATURED TRIAL SESSION | Christina D.</a></h3>
-                <div class="cont">
-                	<div class="collapsed_comments">
-                    	2013 FEBRUARY 27 | BY <span class="red">JASON MUSCAT</span> | COMMENT<span class="red">(4)</span>
-                    </div>
-                    <ul class="social_item clearfix">
-                        <li class="tweet"><a href="#"><img src="wp-includes/images/data/info_tweet.jpg" alt="" /></a></li>
-                        <li class="face"><a href="#"><img src="wp-includes/images/data/info_face.jpg" alt="" /></a></li>
-                        <li class="google"><a href="#"><img src="wp-includes/images/data/info_g+.jpg" alt="" /></a></li>
-                        <li class="bi"><a href="#"><img src="wp-includes/images/data/info_bi.jpg" alt="" /></a></li>
-                    </ul>
-                    <p class="img"><img src="wp-includes/images/data/blog_img_01.jpg" alt="" /></p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <a class="read_more" href="#">Read more »</a>
-                </div>
                
 <!--                <div class="PageNav">
                 	<a class="current" href="#">1</a>
