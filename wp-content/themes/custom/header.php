@@ -14,8 +14,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<script src="wp-includes/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="wp-includes/js/common.js" type="text/javascript"></script>
+<script src="../wp-includes/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../wp-includes/js/common.js" type="text/javascript"></script>
 <!--[if lt IE 10]>
     <script type="text/javascript" src="htc/PIE.js"></script>
 <![endif]-->
@@ -39,24 +39,24 @@
     <!--wrapper-->
     <div id="wrapper">
     	<div id="header">
-        	<h1 class="logo"><a href="<?php get_bloginfo('wpurl');?>"><img src="wp-includes/images/common/logo.jpg" alt="" /></a></h1>
+        	<h1 class="logo"><a href="<?php get_bloginfo('wpurl');?>"><img src="../../wp-includes/images/common/logo.jpg" alt="" /></a></h1>
                 
             <div class="navi">
             	<ul class="sub_navi clearfix">
-                	<li><a href="<?php get_bloginfo('wpurl');?>"><span><img src="wp-includes/images/common/icon_home.png" alt="home" /></span>Home</a></li>
-                    <li><a href="#"><span><img src="wp-includes/images/common/icon_contact.png" alt="mesage" /></span>Contact</a></li>
-                    <li><a href="#"><span><img src="wp-includes/images/common/icon_faq.png" alt="faq" /></span>FAQ</a></li>
+                	<li><a href="<?php get_bloginfo('wpurl');?>"><span><img src="../wp-includes/images/common/icon_home.png" alt="home" /></span>Home</a></li>
+                    <li><a href="#"><span><img src="../wp-includes/images/common/icon_contact.png" alt="mesage" /></span>Contact</a></li>
+                    <li><a href="#"><span><img src="../wp-includes/images/common/icon_faq.png" alt="faq" /></span>FAQ</a></li>
                 </ul>
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'main_navi clearfix', 'menu' => 'main_menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-                <ul class="main_navi clearfix">
+<!--                <ul class="main_navi clearfix">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">The Experts</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Blog</a></li>
-                </ul>
+                </ul>-->
                 <p id="SpMain_navi">
                 	<span class="icon_bar">line</span>
                     <span class="icon_bar">line</span>
@@ -72,5 +72,5 @@
                 </ul><!-- /hd_shop_menu -->
             </div>
         </div>
-        <h2 class="tit"><img src="wp-includes/images/data/blog_tit.jpg" alt="The  Beautiful You Makeup &amp; Hair Blog" /></h2>
+        <h2 class="tit"><img src="../wp-includes/images/data/blog_tit.jpg" alt="The  Beautiful You Makeup &amp; Hair Blog" /></h2>
         <div id="content" class="blog clearfix">

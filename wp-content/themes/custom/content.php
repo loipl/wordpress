@@ -28,12 +28,7 @@
 		<?php endif; // comments_open() ?>
 		</span>
 	</div>
-	<ul class="social_item clearfix">
-		<li class="tweet"><a href="#"><img src="wp-includes/images/data/info_tweet.jpg" alt="" /></a></li>
-		<li class="face"><a href="#"><img src="wp-includes/images/data/info_face.jpg" alt="" /></a></li>
-		<li class="google"><a href="#"><img src="wp-includes/images/data/info_g+.jpg" alt="" /></a></li>
-		<li class="bi"><a href="#"><img src="wp-includes/images/data/info_bi.jpg" alt="" /></a></li>
-	</ul>
+
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
