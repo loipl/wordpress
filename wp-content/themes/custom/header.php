@@ -39,11 +39,11 @@
     <!--wrapper-->
     <div id="wrapper">
     	<div id="header">
-        	<h1 class="logo"><a href="<?php get_bloginfo('wpurl');?>"><img src="../../wp-includes/images/common/logo.jpg" alt="" /></a></h1>
+        	<h1 class="logo"><a href="<?php bloginfo('url');?>"><img src="../../wp-includes/images/common/logo.jpg" alt="" /></a></h1>
                 
             <div class="navi">
             	<ul class="sub_navi clearfix">
-                	<li><a href="<?php get_bloginfo('wpurl');?>"><span><img src="../../wp-includes/images/common/icon_home.png" alt="home" /></span>Home</a></li>
+                	<li><a href="<?php bloginfo('url');?>"><span><img src="../../wp-includes/images/common/icon_home.png" alt="home" /></span>Home</a></li>
                     <li><a href="#"><span><img src="../../wp-includes/images/common/icon_contact.png" alt="mesage" /></span>Contact</a></li>
                     <li><a href="#"><span><img src="../../wp-includes/images/common/icon_faq.png" alt="faq" /></span>FAQ</a></li>
                 </ul>

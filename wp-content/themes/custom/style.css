@@ -425,3 +425,8 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
 }
+
+/*for test only*/
+.sub-menu {
+    display: none;
+}
