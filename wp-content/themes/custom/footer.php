@@ -5,11 +5,11 @@
         <div class="social">
             <span class="fllow_us">Follow us</span>
             <ul class="list">
-                <li><a href="#"><img src="../wp-includes/images/common/icon_face.png" alt="facebook" /></a></li>
-                <li><a href="#"><img src="../wp-includes/images/common/icon_Twin.png" alt="twitter" /></a></li>
-                <li><a href="#"><img src="../wp-includes/images/common/icon_P.png" alt="pinterest" /></a></li>
-                <li><a href="#"><img src="../wp-includes/images/common/icon_in.png" alt="in" /></a></li>
-                <li><a href="#"><img src="../wp-includes/images/common/icon_g+.png" alt="google +" /></a></li>
+                <li><a href="#"><img src="../../wp-includes/images/common/icon_face.png" alt="facebook" /></a></li>
+                <li><a href="#"><img src="../../wp-includes/images/common/icon_Twin.png" alt="twitter" /></a></li>
+                <li><a href="#"><img src="../../wp-includes/images/common/icon_P.png" alt="pinterest" /></a></li>
+                <li><a href="#"><img src="../../wp-includes/images/common/icon_in.png" alt="in" /></a></li>
+                <li><a href="#"><img src="../../wp-includes/images/common/icon_g+.png" alt="google +" /></a></li>
             </ul>
         </div>
         <div class="contact_footer">
