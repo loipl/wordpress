@@ -430,3 +430,26 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
 .sub-menu {
     display: none;
 }
+#header .main-navigation ul.main-navi,
+#header .main-navigation div.main-navi > ul {
+	border-bottom: 1px solid lightgreen;
+	border-top: 1px solid lightgreen;
+}
+#header .main-navigation li ul li a {
+	background: lightgreen;
+}
+#header .main-navigation a {
+	color: green;
+}
+#header .main-navigation li ul li a:hover {
+	background: bisque;
+}
+#header .main-navigation a:hover {
+	color: darkred;
+}
+#header .main-navigation ul.main-navi,
+#header .main-navigation div.main-navi > ul,
+#header .main-navigation li ul li a {
+	border-color: rgba( darkred, 0.1 );
+}
+

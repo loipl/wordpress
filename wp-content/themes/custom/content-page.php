@@ -9,13 +9,17 @@
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php if (!is_front_page()) : ?>
 		<header class="entry-header">
 			<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
 			<?php the_post_thumbnail(); ?>
 			<?php endif; ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php if ( ! is_home()) :?>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php endif;?>
 		</header>
-
+		<?php endif;?>
+		
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
