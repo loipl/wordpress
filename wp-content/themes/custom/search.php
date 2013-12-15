@@ -8,8 +8,8 @@
  */
 
 get_header(); ?>
-
-	<section id="primary" class="site-content">
+<div class="container">
+	<section id="primary" class="cont">
 		<div id="content" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -17,8 +17,6 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentytwelve' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header>
-
-			<?php twentytwelve_content_nav( 'nav-above' ); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -44,6 +42,6 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</section><!-- #primary -->
-
+</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

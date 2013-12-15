@@ -427,10 +427,10 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
 }
 
 /*for test only*/
-.sub-menu {
+.sub-menu{
     display: none;
 }
-#header .main-navigation ul.main-navi,
+/*#header .main-navigation ul.main-navi,
 #header .main-navigation div.main-navi > ul {
 	border-bottom: 1px solid lightgreen;
 	border-top: 1px solid lightgreen;
@@ -451,5 +451,5 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
 #header .main-navigation div.main-navi > ul,
 #header .main-navigation li ul li a {
 	border-color: rgba( darkred, 0.1 );
-}
+}*/
 

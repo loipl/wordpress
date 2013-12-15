@@ -14,8 +14,10 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+<link href="../../../wp-includes/css/style_old.css" type="text/css" rel="stylesheet" />
 <script src="../../../wp-includes/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="../../../wp-includes/js/common.js" type="text/javascript"></script>
+<script src="../../../wp-includes/js/menu.js" type="text/javascript"></script>
 <!--[if lt IE 10]>
     <script type="text/javascript" src="htc/PIE.js"></script>
 <![endif]-->
