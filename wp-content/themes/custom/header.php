@@ -78,3 +78,4 @@
         <h2 class="tit"><img src="../../../wp-includes/images/data/blog_tit.jpg" alt="The  Beautiful You Makeup &amp; Hair Blog" /></h2>
 		<?php endif;?>
         <div id="content" class="blog clearfix">
+<!--        <div id="content" class="sub_layout clearfix">-->
