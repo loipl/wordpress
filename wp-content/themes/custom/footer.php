@@ -17,7 +17,7 @@
             	<p class="mail_link"><a href="mailto:info@domainname.com.au">info@domainname.com.au</a></p>
                 <p class="number_phone">925.240.3360</p>
             </div>
-            <address class="copyright">copyright &copy; 2013 Beautiful You Makeup & Hair.All Rights Reserved</address>
+            <address class="copyright">Copyright &copy; 2013 Beautiful You Makeup & Hair.All Rights Reserved</address>
         </div>
     </div><!--footer-->
 	<?php wp_footer(); ?>

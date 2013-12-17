@@ -422,7 +422,8 @@ function wp_list_categories( $args = '' ) {
 		'exclude_tree' => '', 'current_category' => 0,
 		'hierarchical' => true, 'title_li' => __( 'Categories' ),
 		'echo' => 1, 'depth' => 0,
-		'taxonomy' => 'category'
+		'taxonomy' => 'category',
+		'show_count' => 1
 	);
 
 	$r = wp_parse_args( $args, $defaults );
