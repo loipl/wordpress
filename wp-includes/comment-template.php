@@ -1807,7 +1807,7 @@ function wp_list_comments( $args = array(), $comments = null ) {
 
 	$defaults = array(
 		'walker'            => null,
-		'max_depth'         => '',
+		'max_depth'         => '2',
 		'style'             => 'ul',
 		'callback'          => null,
 		'end-callback'      => null,

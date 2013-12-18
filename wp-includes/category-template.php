@@ -843,6 +843,8 @@ class Walker_Category extends Walker {
 
 		$cat_name = esc_attr( $category->name );
 		$cat_name = apply_filters( 'list_cats', $cat_name, $category );
+		$cat_name .= ' ('.get_category($category->term_id)->count.')';
+		
 		$link = '<a href="' . esc_url( get_term_link($category) ) . '" ';
 		if ( $use_desc_for_title == 0 || empty($category->description) )
 			$link .= 'title="' . esc_attr( sprintf(__( 'View all posts filed under %s' ), $cat_name) ) . '"';
@@ -869,7 +871,7 @@ class Walker_Category extends Walker {
 			}
 
 			$link .= '>';
-
+			var_dump($link);die;
 			if ( empty($feed_image) )
 				$link .= $name;
 			else

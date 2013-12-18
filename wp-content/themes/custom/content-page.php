@@ -8,8 +8,29 @@
  */
 ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php if (!is_front_page()) : ?>
+<!--	<article id="post-<?php // the_ID(); ?>" <?php // post_class(); ?>>
+		<?php // if (!is_front_page()) : ?>
+		<header class="entry-header">
+			<?php // if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
+			<?php // the_post_thumbnail(); ?>
+			<?php // endif; ?>
+			<?php // if ( ! is_home()) :?>
+				<h1 class="entry-title"><?php // the_title(); ?></h1>
+			<?php // endif;?>
+		</header>
+		<?php // endif;?>
+		
+		<div class="entry-content">
+			<?php // the_content(); ?>
+			<?php // wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+		</div> .entry-content 
+		<footer class="entry-meta">
+			<?php // edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
+		</footer> .entry-meta 
+	</article> #post -->
+	
+	<?php if (!is_front_page()) : ?>
+	<div class="container" id="post-<?php the_ID(); ?>">
 		<header class="entry-header">
 			<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
 			<?php the_post_thumbnail(); ?>
@@ -18,13 +39,15 @@
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php endif;?>
 		</header>
-		<?php endif;?>
-		
-		<div class="entry-content">
+	<?php else :?>
+	<div class="homepage" id="post-<?php the_ID(); ?>">
+	<?php endif;?>
+	
+		<div class="cont">
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
-		</div><!-- .entry-content -->
+		</div>
 		<footer class="entry-meta">
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-meta -->
-	</article><!-- #post -->
+		</footer>
+	</div>
