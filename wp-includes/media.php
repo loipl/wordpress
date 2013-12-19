@@ -228,14 +228,14 @@ function set_post_thumbnail_size( $width = 0, $height = 0, $crop = false ) {
 function get_image_tag($id, $alt, $title, $align, $size='medium') {
 
 	list( $img_src, $width, $height ) = image_downsize($id, $size);
-	$hwstring = image_hwstring($width, $height);
+//	$hwstring = image_hwstring($width, $height);
 
 	$title = $title ? 'title="' . esc_attr( $title ) . '" ' : '';
 
-	$class = 'align' . esc_attr($align) .' size-' . esc_attr($size) . ' wp-image-' . $id;
-	$class = apply_filters('get_image_tag_class', $class, $id, $align, $size);
+//	$class = 'align' . esc_attr($align) .' size-' . esc_attr($size) . ' wp-image-' . $id;
+//	$class = apply_filters('get_image_tag_class', $class, $id, $align, $size);
 
-	$html = '<img src="' . esc_attr($img_src) . '" alt="' . esc_attr($alt) . '" ' . $title . $hwstring . 'class="' . $class . '" />';
+	$html = '<img src="' . esc_attr($img_src) . '" alt="' . esc_attr($alt) . '" ' . $title . ' />';
 
 	$html = apply_filters( 'get_image_tag', $html, $id, $alt, $title, $align, $size );
 
