@@ -323,8 +323,9 @@ function twentytwelve_comment( $comment, $args, $depth ) {
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 		<div class="user_avatar"><?php echo get_avatar( $comment, 44 );?></div>
-		<span class="between_span"></span>
+		
 		<div id="comment-<?php comment_ID(); ?>" class="comment">
+			<span class="between_span"></span>
 			<header class="comment-meta comment-author vcard">
 				<?php
 					printf( '<cite><b class="fn">%1$s</b> %2$s</cite>',
