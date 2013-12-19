@@ -22,7 +22,7 @@
 		<?php endif; // is_single() ?>
 	</header><!-- .entry-header -->
 	<div class="collapsed_comments">
-		<?php  twentytwelve_entry_meta(); ?><br/>
+		<?php  twentytwelve_entry_meta(); ?>
 		<span class="red" style="text-decoration: underline"><?php if ( comments_open() ) : ?>
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
 		<?php endif; // comments_open() ?>
