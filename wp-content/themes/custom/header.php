@@ -18,6 +18,7 @@
 <script src="../../../wp-includes/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="../../../wp-includes/js/common.js" type="text/javascript"></script>
 <script src="../../../wp-includes/js/menu.js" type="text/javascript"></script>
+<script src="../../../wp-includes/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 <!--[if lt IE 10]>
     <script type="text/javascript" src="htc/PIE.js"></script>
 <![endif]-->
@@ -52,25 +53,41 @@
                 <nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'main_navi', 'menu' => 'main_menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-<!--                <ul class="main_navi clearfix">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">The Experts</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>-->
                 <p id="SpMain_navi">
                 	<span class="icon_bar">line</span>
                     <span class="icon_bar">line</span>
                     <span class="icon_bar">line</span>
                 </p>
                 <!--hd_shop_menu -->
-                <ul id="Sp_navi">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">The Experts</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Blog</a></li>
+				 
+                <ul id="Sp_navi" style="display:none;">
+					<?php $items = wp_get_nav_menu_items( 'main_menu'); 
+						foreach ($items as $item) {
+							if ($item -> title == 'About Us') {
+								$html = "<li>";
+								if ($item -> url != '') {
+									$html .= "<a href = " . $item -> url  . ">";
+								} else {
+									$html .= "<a>";
+								}
+								$html .= $item -> title;
+								$html .= "</a>";
+								echo $html;
+							} elseif ($item -> type == 'custom' || ($item -> title == 'The Experts' || $item -> title == 'Blog')){
+								$html = "</li><li>";
+								if ($item -> url != '') {
+									$html .= "<a href = " . $item -> url  . ">";
+								} else {
+									$html .= "<a>";
+								}
+								$html .= $item -> title;
+								$html .= "</a>";
+								echo $html;
+							} else {
+								echo "<ul class='sub_menu_mobile'><a href='".$item->url."'>" .$item->title."</a></ul>";
+							}
+						}
+					?>
                 </ul><!-- /hd_shop_menu -->
             </div>
         </div>

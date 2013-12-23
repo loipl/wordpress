@@ -5,4 +5,7 @@ $(document).ready(function(){
         $(this).children('ul').fadeOut();
     });
    
+	$(function() {
+		$( "#accordion" ).accordion();
+});
 });
