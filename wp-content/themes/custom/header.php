@@ -18,7 +18,6 @@
 <script src="../../../wp-includes/js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="../../../wp-includes/js/common.js" type="text/javascript"></script>
 <script src="../../../wp-includes/js/menu.js" type="text/javascript"></script>
-<script src="../../../wp-includes/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 <!--[if lt IE 10]>
     <script type="text/javascript" src="htc/PIE.js"></script>
 <![endif]-->
@@ -51,8 +50,8 @@
                     <li><a href="/faq/"><span><img src="../../../wp-includes/images/common/icon_faq.png" alt="faq" /></span>FAQ</a></li>
                 </ul>
                 <nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'main_navi', 'menu' => 'main_menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'main_navi', 'menu' => 'main_menu' ) ); ?>
+				</nav><!-- #site-navigation -->
                 <p id="SpMain_navi">
                 	<span class="icon_bar">line</span>
                     <span class="icon_bar">line</span>
