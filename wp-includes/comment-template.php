@@ -363,7 +363,7 @@ function get_comment_class( $class = '', $comment_id = null, $post_id = null ) {
 	$classes = array();
 
 	// Get the comment type (comment, trackback),
-	$classes[] = ( empty( $comment->comment_type ) ) ? 'comment' : $comment->comment_type;
+	$classes[] = ( empty( $comment->comment_type ) ) ? '' : $comment->comment_type;
 
 	// If the comment author has an id (registered), then print the log in name
 	if ( $comment->user_id > 0 && $user = get_userdata($comment->user_id) ) {
