@@ -111,7 +111,11 @@ function get_image_send_to_editor($id, $caption, $title, $align, $url='', $rel =
 	$rel = $rel ? ' rel="attachment wp-att-' . esc_attr($id).'"' : '';
 
 	if ( $url )
-		$html = '<div class="photo_right"><a href="' . esc_attr($url) . "\"$rel>$html</a></div>";
+		if (is_page()) {
+			$html = '<div class="photo_right"><a href="' . esc_attr($url) . "\"$rel>$html</a></div>";
+		} else {
+			$html = '<a href="' . esc_attr($url) . "\"$rel>$html</a>";
+		}
 
 	$html = apply_filters( 'image_send_to_editor', $html, $id, $caption, $title, $align, $url, $size, $alt );
 
