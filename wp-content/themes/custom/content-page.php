@@ -29,18 +29,19 @@
 		</footer> .entry-meta 
 	</article> #post -->
 	
-	<?php if (!is_front_page()) : ?>
-	<div class="container" id="post-<?php the_ID(); ?>">
-		<header class="entry-header">
-			<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
-			<?php the_post_thumbnail(); ?>
-			<?php endif; ?>
-			<?php if ( ! is_home()) :?>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php endif;?>
-		</header>
+	<?php $page_title = get_the_title();
+        if (is_front_page() || $page_title == 'Wedding' || $page_title == 'Fashion' || $page_title == 'Before and After') : ?>
+            <div class="homepage" id="post-<?php the_ID(); ?>">
 	<?php else :?>
-	<div class="homepage" id="post-<?php the_ID(); ?>">
+            <div class="container" id="post-<?php the_ID(); ?>">
+                <header class="entry-header">
+                        <?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
+                        <?php the_post_thumbnail(); ?>
+                        <?php endif; ?>
+                        <?php if ( ! is_home()) :?>
+                                <h1 class="entry-title"><?php the_title(); ?></h1>
+                        <?php endif;?>
+                </header>
 	<?php endif;?>
 	
 		<div class="cont">

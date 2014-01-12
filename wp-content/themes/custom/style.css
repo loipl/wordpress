@@ -477,3 +477,6 @@ body {background:url(images/common/body.gif) repeat;font-size:14px;color:#000;fo
  }
  #Sp_navi li .sub_menu_mobile a{color:#999;}
  #Sp_navi li .sub_menu_mobile a:hover{color:#811417;}
+ .price {
+     float:right;
+ }
