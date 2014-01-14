@@ -13,6 +13,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="shortcut icon" type="image/x-icon" href="../../../wp-includes/images/favi.ico" />
 
 <link href="../../../wp-includes/css/style_old.css" type="text/css" rel="stylesheet" />
 <script src="../../../wp-includes/js/jquery-1.9.1.min.js" type="text/javascript"></script>
