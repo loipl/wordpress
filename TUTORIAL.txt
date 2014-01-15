@@ -1,1 +1,1 @@
-http://themeshaper.com/2012/10/27/setting-up-your-theme-functions/
+http://www.wpbeginner.com/wp-tutorials/how-to-move-wordpress-from-local-server-to-live-site/
