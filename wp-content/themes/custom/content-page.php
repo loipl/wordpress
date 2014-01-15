@@ -30,8 +30,10 @@
 	</article> #post -->
 	
 	<?php $page_title = get_the_title();
-        if (is_front_page() || $page_title == 'Wedding' || $page_title == 'Fashion' || $page_title == 'Before and After') : ?>
-            <div class="homepage" id="post-<?php the_ID(); ?>">
+        if ($page_title == 'Wedding' || $page_title == 'Fashion' || $page_title == 'Before and After') : ?>
+            <div class="portfolio" id="post-<?php the_ID(); ?>">
+	<?php elseif (is_front_page()) : ?>
+			<div class="homepage" id="post-<?php the_ID(); ?>">
 	<?php else :?>
             <div class="container" id="post-<?php the_ID(); ?>">
                 <header class="entry-header">
