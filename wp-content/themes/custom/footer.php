@@ -15,9 +15,9 @@
         <div class="contact_footer">
         	<div class="contact clearfix">
             	<p class="mail_link"><a href="mailto:info@beautifulyoumakeup.com.au">info@beautifulyoumakeup.com.au</a></p>
-                <p class="number_phone">+61 0404.998.893</p>
+                <p class="number_phone">+61 404 998 893</p>
             </div>
-            <address class="copyright">Copyright &copy; 2014 Beautiful You Makeup & Hair.All Rights Reserved</address>
+            <address class="copyright">Copyright &copy; 2014 Beautiful You Makeup & Hair . All Rights Reserved</address>
         </div>
     </div><!--footer-->
 	<?php wp_footer(); ?>
