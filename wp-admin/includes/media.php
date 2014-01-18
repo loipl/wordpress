@@ -111,7 +111,6 @@ function get_image_send_to_editor($id, $caption, $title, $align, $url='', $rel =
 	$rel = $rel ? ' rel="attachment wp-att-' . esc_attr($id).'"' : '';
 
 	if ( $url )
-            var_dump($_COOKIE);die;
             if (is_page()) {
                     $html = '<div class="photo_right"><a href="' . esc_attr($url) . "\"$rel>$html</a></div>";
             } else {
