@@ -510,3 +510,28 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+function custom_login_logo() {
+    echo '<style type="text/css">'.
+             'h1 a { background-image:url('.get_bloginfo( 'template_directory' ).'/images/logo.jpg) !important; }'.
+         '</style>';
+}
+add_action( 'login_head', 'custom_login_logo' );
+
+function remove_admin_bar_links() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('about');            // Remove the about WordPress link
+    $wp_admin_bar->remove_menu('wporg');            // Remove the WordPress.org link
+    $wp_admin_bar->remove_menu('documentation');    // Remove the WordPress documentation link
+    $wp_admin_bar->remove_menu('support-forums');   // Remove the support forums link
+    $wp_admin_bar->remove_menu('feedback');         // Remove the feedback link
+//    $wp_admin_bar->remove_menu('site-name');        // Remove the site name menu
+//    $wp_admin_bar->remove_menu('view-site');        // Remove the view site link
+    $wp_admin_bar->remove_menu('updates');          // Remove the updates link
+    $wp_admin_bar->remove_menu('ckeditor_settings');
+//    $wp_admin_bar->remove_menu('comments');         // Remove the comments link
+//    $wp_admin_bar->remove_menu('new-content');      // Remove the content link
+//    $wp_admin_bar->remove_menu('my-account');       // Remove the user details tab
+ 
+}
+add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );

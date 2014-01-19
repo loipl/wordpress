@@ -214,7 +214,6 @@ function update_nag() {
 	} else {
 		$msg = sprintf( __('<a href="http://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! Please notify the site administrator.'), $cur->current );
 	}
-	echo "<div class='update-nag'>$msg</div>";
 }
 add_action( 'admin_notices', 'update_nag', 3 );
 add_action( 'network_admin_notices', 'update_nag', 3 );
@@ -230,7 +229,6 @@ function update_right_now_message() {
 			$msg .= " <a href='" . network_admin_url( 'update-core.php' ) . "' class='button'>" . sprintf( __('Update to %s'), $cur->current ? $cur->current : __( 'Latest' ) ) . '</a>';
 	}
 
-	echo "<span id='wp-version-message'>$msg</span>";
 }
 
 function get_plugin_updates() {
