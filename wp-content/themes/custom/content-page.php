@@ -30,7 +30,7 @@
 	</article> #post -->
 	
 	<?php $page_title = get_the_title();
-        if ($page_title == 'Wedding' || $page_title == 'Fashion' || $page_title == 'Before and After') : ?>
+        if (strpos($page_title,'Wedding') !== false || strpos($page_title,'Fashion') !== false || strpos($page_title,'Before and After') !== false) : ?>
             <div class="portfolio" id="post-<?php the_ID(); ?>">
 	<?php elseif (is_front_page()) : ?>
 			<div class="homepage" id="post-<?php the_ID(); ?>">
