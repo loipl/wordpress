@@ -535,3 +535,27 @@ function remove_admin_bar_links() {
  
 }
 add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+
+// Setup the hook
+add_action('admin_head', 'get_current_post_type' );
+ 
+function get_current_post_type() {
+    global $post, $typenow, $current_screen;
+    // Check to see if a post object exists
+    if ($post && $post->post_type)
+        return $post->post_type;
+
+    // Check if the current type is set
+    elseif ($typenow)
+        return $typenow;
+
+    // Check to see if the current screen is set
+    elseif ($current_screen && $current_screen->post_type)
+        return $current_screen->post_type;
+
+    // Finally make a last ditch effort to check the URL query for type
+    elseif (isset($_REQUEST['post_type']))
+        return sanitize_key($_REQUEST['post_type']);
+
+    return null;
+}
